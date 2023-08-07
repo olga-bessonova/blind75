@@ -5,7 +5,8 @@ def pick_primes(number_list):
     res = []
 
     for num in number_list:
-        res.append(num) if prime(num) 
+        if prime(num):
+          res.append(num)  
     return res
 
 # Helper function that returns True if num is prime
