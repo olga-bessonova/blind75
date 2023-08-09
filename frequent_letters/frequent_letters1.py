@@ -2,6 +2,7 @@
 # returns a list containing the characters that appeared more than twice in a string.
 
 def frequent_letters(string):
+    hash = {}
 
 print(frequent_letters("mississippi")) #["i", "s"]
 print(frequent_letters("bootcamp")) #[]
