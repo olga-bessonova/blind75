@@ -2,6 +2,8 @@
 # returns a new list containing the names of each dictionary.
 
 def map_by_name(dict_list):
+    return list(map(lambda x: x['name'], dict_list ))
+    # return ([x["name"] for x in dict_list])
 
 
 pets = [
@@ -13,6 +15,7 @@ pets = [
 ]
 
 print(map_by_name(pets))
+#['Rolo', 'Sunny', 'Saki', 'Finn', 'Buffy']
 
 countries = [
  {"name": "Japan", "continent": "Asia"},
@@ -21,3 +24,4 @@ countries = [
 ]
 
 print(map_by_name(countries))
+#['Japan', 'Hungary', 'Kenya']
