@@ -20,7 +20,7 @@ def exist(board, word):
             return False
         path.add((r,c))
         print('path=',path)
-        res = (dfs(r+1,c,i+1) or
+        res = ( dfs(r+1,c,i+1) or
                 dfs(r-1,c,i+1) or
                 dfs(r,c+1,i+1) or
                 dfs(r,c-1,i+1))
