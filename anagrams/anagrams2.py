@@ -4,8 +4,13 @@
 # Solve this without using .sort().
 
 def anagrams(word1, word2):
-    hash = {}
-    for l in word1
+    hash1 = {}
+    hash2 = {}
+    for l in word1:
+        hash1[l] = hash1.get(l, 0) + 1
+    for l in word2:
+        hash2[l] = hash2.get(l, 0) + 1
+    return hash1 == hash2
   
   
 print(anagrams("cat", "act"))          # True

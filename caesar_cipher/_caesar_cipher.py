@@ -5,8 +5,8 @@
 # Feel free to use this variable:
 # alphabet = "abcdefghijklmnopqrstuvwxyz"
 
-def caesar_cipher(string, num):
+def ceasar_cipher(string, num):
    
-print(caesar_cipher("apple", 1))    # "bqqmf"
-print(caesar_cipher("bootcamp", 2)) # "dqqvecor"
-print(caesar_cipher("zebra", 4))    # "difve"
+print(ceasar_cipher("apple", 1))    # "bqqmf"
+print(ceasar_cipher("bootcamp", 2)) # "dqqvecor"
+print(ceasar_cipher("zebra", 4))    # "difve"
