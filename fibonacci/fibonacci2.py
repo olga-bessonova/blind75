@@ -11,11 +11,10 @@ def fibonacci(length):
         return [1]
     elif length == 2:
         return [1,1]
-    else:
-        res = []
+    else:      
         prev_fib = fibonacci(length-1)
-        res.append(prev_fib)
-        return prev_fib.append(prev_fib[-1] + prev_fib[-2])
+        prev_fib.append(prev_fib[-1] + prev_fib[-2])
+        return prev_fib
        
 
 print(fibonacci(0)) # []
