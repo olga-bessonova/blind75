@@ -8,19 +8,6 @@
 # You can assume that length is not zero
 
 def summation_sequence(start, length):
-  res = [start]
-  i = length
-  while i > 1:
-    res.append(sum_func(res[-1]))
-    i -= 1
-  return res
-
-def sum_func(num):
-  count = 0
-  for i in range(1,num+1):
-    count += i
-  return count
-
 
 print(summation_sequence(3, 4)) # [3, 6, 21, 231]
 print(summation_sequence(5, 3)) # [5, 15, 120]
