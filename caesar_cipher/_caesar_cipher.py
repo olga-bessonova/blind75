@@ -6,6 +6,12 @@
 # alphabet = "abcdefghijklmnopqrstuvwxyz"
 
 def ceasar_cipher(string, num):
+  alphabet = "abcdefghijklmnopqrstuvwxyz"
+  arr = list(string)
+  for i,ch in enumerate(arr):
+    arr[i] = alphabet[(alphabet.index(ch) + num) % 26]
+  # print(arr)
+  return ''.join(arr)
    
 print(ceasar_cipher("apple", 1))    # "bqqmf"
 print(ceasar_cipher("bootcamp", 2)) # "dqqvecor"
