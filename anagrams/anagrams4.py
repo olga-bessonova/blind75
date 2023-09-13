@@ -14,5 +14,6 @@ def anagrams(word1, word2):
   
 print(anagrams("cat", "act"))          # True
 print(anagrams("restful", "fluster"))  # True
+
 print(anagrams("cat", "dog"))          # False
 print(anagrams("boot", "bootcamp"))    # False
