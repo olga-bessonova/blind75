@@ -3,7 +3,11 @@
 
 def double_letter_count(string):
   count = 0
-  
+  for i in range(0, len(string) - 1):
+    if string[i] == string[i+1]:
+      count += 1
+  return count
+
    
   
 print(double_letter_count("the jeep rolled down the hill")) # 3
