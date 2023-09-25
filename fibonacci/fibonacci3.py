@@ -5,6 +5,12 @@
 # returns the fibonacci sequence up to the given length.
 
 def fibonacci(length):
+  if length == 0:
+    return []
+  elif length == 1:
+    return [1]
+  if length == 0:
+    return []
        
 
 print(fibonacci(0)) # []
