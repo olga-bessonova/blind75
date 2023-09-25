@@ -9,8 +9,12 @@ def fibonacci(length):
     return []
   elif length == 1:
     return [1]
-  if length == 0:
-    return []
+  elif length == 2:
+    return [1, 1]
+  else:
+    res = fibonacci(length - 1)
+    res.append(res[-1] + res[-2])
+    return res
        
 
 print(fibonacci(0)) # []
