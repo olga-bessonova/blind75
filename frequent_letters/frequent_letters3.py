@@ -10,5 +10,6 @@ def frequent_letters(string):
       hash[ch] = 1
   return [x for x in hash if hash[x] > 2]
 
+
 print(frequent_letters("mississippi")) #["i", "s"]
 print(frequent_letters("bootcamp")) #[]
