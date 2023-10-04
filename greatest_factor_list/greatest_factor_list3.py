@@ -6,6 +6,8 @@
 # because that would be too easy).
 
 def greatest_factor_list(num_list):
+def devisor(num):
+  
     
 print(greatest_factor_list([16, 7, 9, 14])) # [8, 7, 9, 7]
 print(greatest_factor_list([30, 3, 24, 21, 10])) # [15, 3, 12, 21, 5]
