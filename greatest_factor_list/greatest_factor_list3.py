@@ -7,6 +7,7 @@
 
 def greatest_factor_list(num_list):
   return [x/2 if x % 2 == 0 else x for x in num_list]
+
 # def devisor(num):
 #   res = []
 #   for i in range(num):
