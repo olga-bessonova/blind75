@@ -2,8 +2,10 @@
 # The function should return the last index where the character can be found in the string.
 
 def last_index(arr, ch):
-
-
+  for i in reversed(range(len(arr))):
+    if arr[i] == ch:
+      return i
+  
 print(last_index("abca", "a"))        # 3
 print(last_index("mississipi", "i"))  # 9
 print(last_index("octagon", "o"))     # 5
