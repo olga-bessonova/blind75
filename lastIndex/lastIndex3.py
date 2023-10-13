@@ -5,6 +5,7 @@ def last_index(arr, ch):
   for i in reversed(range(len(arr))):
     if arr[i] == ch:
       return i
+    
   
 print(last_index("abca", "a"))        # 3
 print(last_index("mississipi", "i"))  # 9
