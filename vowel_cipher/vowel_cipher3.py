@@ -4,11 +4,14 @@
 def vowel_cipher(string):
   arr = list(string)
   res = [vowel_update(ch) for ch in arr]
-  return res.join('')
+  return ''.join(res)
 
 def vowel_update(ch):
   alpha = 'aeiou'
-  return alpha[alpha.index(ch) % 5 + 1]
+  if ch in alpha:
+    return alpha[(alpha.index(ch) + 1) % 5]
+  else:
+    return ch
    
     
 print(vowel_cipher("bootcamp")) # "buutcemp"
