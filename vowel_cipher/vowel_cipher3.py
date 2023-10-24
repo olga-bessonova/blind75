@@ -2,7 +2,11 @@
 # returns a new string where every vowel becomes the next vowel in the alphabet.
 
 def vowel_cipher(string):
-  
+  arr = string.split('')
+
+def vowel_update(ch):
+  alpha = 'aeiou'
+  return
    
     
 print(vowel_cipher("bootcamp")) # "buutcemp"
