@@ -3,6 +3,12 @@
 # with start and is length elements long. In the sequence, every element
 # should be 3 times the previous element. Assume that the length is at least 1.
 def triple_sequence(start, length): 
+  res = [start]
+  i = 1
+  while i < length:
+    res.append(res[-1] * 3)
+    i += 1
+  return res
 
 
 print(triple_sequence(2, 4)) # [2, 6, 18, 54]
