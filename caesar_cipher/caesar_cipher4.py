@@ -6,6 +6,7 @@
 # alphabet = "abcdefghijklmnopqrstuvwxyz"
 
 def ceasar_cipher(string, num):
+  alphabet = "abcdefghijklmnopqrstuvwxyz"
 
    
 print(ceasar_cipher("apple", 1))    # "bqqmf"
