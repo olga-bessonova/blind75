@@ -11,7 +11,6 @@ def ceasar_cipher(string, num):
   for i,ch in enumerate(arr):
     index = alphabet.index(ch)
     arr[i] = alphabet[(index + num) % 26]
-
   return ''.join(arr)
    
 print(ceasar_cipher("apple", 1))    # "bqqmf"
