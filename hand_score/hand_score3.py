@@ -4,6 +4,11 @@
 # The letters of the input string are not necessarily uppercase.
 
 def hand_score(hand):
+  hash = {'A': 4, 'K': 3, 'Q': 2, 'J': 1}
+  res = 0 
+  for i, ch in enumerate(hand):
+    res += hash[ch.upper()]
+  return res
 
 
 print(hand_score("AQAJ")) #11
