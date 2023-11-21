@@ -1,17 +1,13 @@
-# Write a function most_vowels that takes in a sentence 
-# string and returns the word of the sentence that contains the most vowels.
-def most_vowels(sentence):
-  arr = sentence.split(' ')
-  arr_count = [vowels_count(word) for word in arr]
-  return arr[arr_count.index(max(arr_count))]
+# Write a function map_by_key that takes an list of dictionaries and a key string. 
+# The function should return a new list containing the values from each dictionary for the given key.
 
-def vowels_count(word):
-  vowels = 'aeiou'
-  count = 0
-  for i, ch in enumerate(word):
-    if ch in vowels:
-      count += 1
-  return count
+def map_by_key(dict_list, key):
+    
+locations = [
+  {"city": "New York City", "state": "New York", "coast": "East"},
+  {"city": "San Francisco", "state": "California", "coast": "West"},
+  {"city": "Portland", "state": "Oregon", "coast": "West"},
+]
 
-print(most_vowels("what a wonderful life")) # "wonderful"
-print(most_vowels("what a wonderful lifeeeeeeeee")) # "lifeeeeeeeee"
+print(map_by_key(locations, "state")) #["New York", "California", "Oregon"]
+print(map_by_key(locations, "city")) #["New York City", "San Francisco", "Portland"]
