@@ -4,9 +4,14 @@ def most_vowels(sentence):
   arr = sentence.split()
   # print(arr)
   newarr = [vow(x) for x in arr]
-  print(newarr[max(newarr)])
+  # print(newarr)
+  # print(max(newarr))
+  # print(newarr.index(max(newarr)))
+  # print(arr[newarr.index(max(newarr))])
+  # print(newarr[max(newarr)])
+  # print(arr.index([newarr[max(newarr)]]))
   # indexof = newarr.max()
-  return arr[newarr[max(newarr)]]
+  return arr[newarr.index(max(newarr))]
     
 def vow(word):
   vowels = 'aeiou'
