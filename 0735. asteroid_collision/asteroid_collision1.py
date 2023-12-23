@@ -1,3 +1,5 @@
+# doesn't work on all leetcode tests
+
 def collision(asteroids):
   sub_asteroids = [asteroids[0]]
   active_asteroid = []
