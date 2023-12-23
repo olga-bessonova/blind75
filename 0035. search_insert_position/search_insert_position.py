@@ -1,26 +1,18 @@
 def searchInsert(nums, target):
-    found = False
-    if target < nums[0]:
-        return 0
-    if target > nums[-1]:
-        return len(nums)
+  # pointers
+  l, r = 0, len(nums) - 1
 
-    while not found:
-        i = len(nums) // 2 
-        if nums[i] == target:
-            found = True
-            return i
-        elif nums[i] < target:
-            if nums[i] < target and target < nums[i+1]:
-                return i+1
-            else: 
-              nums = nums[i:]
-        else:
-            if nums[i] > target and target > nums[i-1]:
-                return i
-            else: 
-                nums = nums[:i]
+  while l <= r:
+      mid = (l + r) // 2
 
-print(searchInsert([1,3,5,6],5))
-print(searchInsert([1,3,5,6], 2))
+      if target == nums[mid]:
+          return mid
+      elif target < nums[mid]:
+          r = mid -1 
+      else:
+          l = mid + 1
+  return l
+
+print (searchInsert([1,2,3,5,6], 5))
+print (searchInsert([1,2,3,5,6], 4))
     
