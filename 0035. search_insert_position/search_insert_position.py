@@ -1,3 +1,4 @@
+# runtime O(log(n)) memory O(1)
 def searchInsert(nums, target):
   # pointers
   l, r = 0, len(nums) - 1
