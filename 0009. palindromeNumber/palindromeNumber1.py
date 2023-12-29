@@ -1,3 +1,4 @@
+# time O(n), memory O(1)
 def isPalindrome(x):
   arr = list( str(x))
   print(arr)
