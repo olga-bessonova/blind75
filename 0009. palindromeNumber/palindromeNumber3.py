@@ -15,7 +15,7 @@ def isPalindrome(x):
       x = (x % div) // 10
       print("new x: ", x)
       div = div / 100
-      print("new div: ", div)
+      print("new div: ", div
   return True
 
 
