@@ -5,9 +5,9 @@ def fibs(num):
   if num == 0:
     return []
   elif num == 1:
-    return [0]
+    return [1]
   elif num == 2:
-    return [0, 1]
+    return [1, 1]
   else:
     arr = fibs(num-1)
     arr.append(arr[-1] + arr[-2])
