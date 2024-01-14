@@ -22,8 +22,8 @@ def is_prime(num):
                 return False
     return True
 
-print(isUgly(19)) # False
-print(isUgly(20)) # False
+print(isUgly(2)) # True
+print(5//2+5)
 # print([2,3] in [2,3,5]) # True
 # print(isUgly(10)) # True
 # print(isUgly(15)) # True
