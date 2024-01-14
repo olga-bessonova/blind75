@@ -2,10 +2,10 @@ def isUgly(n):
     factors = []
     ugly_factors = [2,3,5]
     for i in range(2, n//2+1): # 2..16
-        print("i= ", i)
+        # print("i= ", i)
         if n % i == 0 and is_prime(i): # 10
             factors.append(i)
-    print("factors: ", factors)
+    # print("factors: ", factors)
     if len(factors) > 0 and all(x in ugly_factors for x in factors):
         return True
     else:
@@ -22,8 +22,8 @@ def is_prime(num):
                 return False
     return True
 
-print(isUgly(2)) # True
-print(5//2+5)
+print(isUgly(1641249143)) # True
+# print(5//2+5)
 # print([2,3] in [2,3,5]) # True
 # print(isUgly(10)) # True
 # print(isUgly(15)) # True
