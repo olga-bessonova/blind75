@@ -21,3 +21,7 @@ print(getKth(12,15,2))
 # my_dict = {'banana': 3, 'apple': 1, 'orange': 2}
 # sorted_dict_values = list(sorted(my_dict.items(), key=lambda item: item[0]))
 # print(sorted_dict_values)
+# [3,3,3,3,3,1,3]
+# arr = List[List[int]]
+# arr[1] = [5]
+# print(arr)
