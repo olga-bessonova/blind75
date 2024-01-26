@@ -6,3 +6,4 @@ def isUgly(num):
   
 print(isUgly(8))
 print(isUgly(17))
+print(isUgly(2))

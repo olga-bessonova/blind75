@@ -13,3 +13,4 @@ def vowel_cipher(string):
 
 print(vowel_cipher("bootcamp")) # "buutcemp"
 print(vowel_cipher("paper cup")) # "pepir cap"
+print(vowel_cipher("hello")) # "hillu"

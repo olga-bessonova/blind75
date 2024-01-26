@@ -13,9 +13,10 @@ def caesar_cipher(string, num):
     arr[i] = alphabet[(index + num) % 26]
   return ''.join(arr)    
    
-print(caesar_cipher("apple", 1))    # "bqqmf"
-print(caesar_cipher("bootcamp", 2)) # "dqqvecor"
-print(caesar_cipher("zebra", 4))    # "difve"
+# print(caesar_cipher("apple", 1))    # "bqqmf"
+# print(caesar_cipher("bootcamp", 2)) # "dqqvecor"
+# print(caesar_cipher("zebra", 4))    # "difve"
+print(caesar_cipher("y", 3))    # "b"
 # print(27 % 26)
 # print((26+1) % 26)
 # print("abcdefghijklmnopqrstuvwxyz".index('z'))

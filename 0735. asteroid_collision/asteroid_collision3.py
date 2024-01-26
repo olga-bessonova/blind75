@@ -1,4 +1,4 @@
-# memory O(n), runtime O(1)
+# memory O(n), runtime O(n)
 def collision(asteroids):
     stack = []
 
