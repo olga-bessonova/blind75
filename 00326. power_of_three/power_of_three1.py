@@ -18,3 +18,4 @@ def isPowerOfThree(n):
 print(isPowerOfThree(27))
 print(isPowerOfThree(0))
 print(isPowerOfThree(-1))
+print(2**3)
