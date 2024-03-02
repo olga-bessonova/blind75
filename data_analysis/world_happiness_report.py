@@ -9,23 +9,22 @@ print(df.head())
 # 2. Display data types of all columns.
 df.info()
 
-# # 3. What country has the highest 'GDP per capita'?
-# print(df['GDP per capita'].value_counts().sort_index())
-# # Replace na and '-' to missing value.
-# df['GDP per capita'] = df['GDP per capita'].replace(['-', 'na'], [None, None])
-# df['GDP per capita'] = pd.to_numeric(df['GDP per capita'], errors='coerce')
-# print(df['GDP per capita'].describe())
+# 3. What country has the highest 'GDP per capita'?
+print(df['GDP per capita'].value_counts().sort_index())
+# Replace na and '-' to missing value.
+df['GDP per capita'] = df['GDP per capita'].replace(['-', 'na'], [None, None])
+df['GDP per capita'] = pd.to_numeric(df['GDP per capita'], errors='coerce')
+print(df['GDP per capita'].describe())
 
-# print(df['Country or region'].value_counts().sort_index())
-# df['Country or region'] = df['Country or region'].replace(['_switzerland', 'switzerland'],'Switzerland')
-# print(df['Country or region'].value_counts().sort_index())
+print(df['Country or region'].value_counts().sort_index())
+df['Country or region'] = df['Country or region'].replace(['_switzerland', 'switzerland'],'Switzerland')
+print(df['Country or region'].value_counts().sort_index())
 
-# max_gdp = df['GDP per capita'].max()
-# print('max_gdp: ', max_gdp)
-# print(df.loc[df['GDP per capita'] == max_gdp, 'Country or region'])
+max_gdp = df['GDP per capita'].max()
+print('max_gdp: ', max_gdp)
+print(df.loc[df['GDP per capita'] == max_gdp, 'Country or region'])
 
 # 4. What's the average score of happiness in Switzerland?
-# Assuming 'df' is your DataFrame
 average_score_switzerland = df[df['Country or region'] == 'Switzerland']['Score of Happiness'].mean()
 print("Average Score of Happiness in Switzerland:", average_score_switzerland)
 
