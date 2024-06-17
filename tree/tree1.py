@@ -20,6 +20,32 @@ class BinaryTree:
       new_node.right_child = self.right_child
       self.right_child = new_node.right_child
 
+  
+  def dfs_traverse(self, target):
+    print(self.value)
+    if self.value == target:
+      return 'Target is found'
+    if self.left_child:
+      self.left_child.dfs_traverse()
+    
+    if self.right_child:
+      self.right_child.dfs_traverse()
+    
 
+a_node = BinaryTree('a')
+a_node.insert_left('b')
+a_node.insert_right('c')
+b_node = a_node.left_child
+c_node = a_node.right_child
 
-# a_node
+b_node.insert_left('d')
+b_node.insert_right('e')
+
+c_node.insert_left('f')
+c_node.insert_right('g')
+
+print(a_node.dfs_traverse(target = 'b'))
+#    a
+#   b c
+# d e f g
+
