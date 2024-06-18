@@ -22,14 +22,18 @@ class BinaryTree:
 
   
   def dfs_traverse(self, target):
-    print(self.value)
+    # print(self.value)
     if self.value == target:
-      return 'Target is found'
+      return print('Target is found')
+    
     if self.left_child:
-      self.left_child.dfs_traverse()
+     self.left_child.dfs_traverse(target)
+      
     
     if self.right_child:
-      self.right_child.dfs_traverse()
+      self.right_child.dfs_traverse(target)
+
+    # return 'Target is not found'
     
 
 a_node = BinaryTree('a')
@@ -44,7 +48,7 @@ b_node.insert_right('e')
 c_node.insert_left('f')
 c_node.insert_right('g')
 
-print(a_node.dfs_traverse(target = 'b'))
+print(a_node.dfs_traverse('h'))
 #    a
 #   b c
 # d e f g
