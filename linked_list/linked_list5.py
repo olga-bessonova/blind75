@@ -12,7 +12,7 @@ class LinkedList:
     new_node = Node(value)
 
     if self.head == None:
-      self.head = value
+      self.head = new_node
     else:
       curr = self.head
 
@@ -20,14 +20,23 @@ class LinkedList:
          curr = curr.next
       
       curr.next = new_node
-
-      return traverse(self)
+    return self.traverse()
     
-    def traverse(self):
-      curr = self.head
+  def traverse(self):
+    curr = self.head
+    if curr is None:
+      print('Linked List is empty')
+      return
+    while curr is not None:
+      print(curr.value, end= " -> ")
+      curr = curr.next
+    print('None')
+    return
+    
+  
 
-      while curr.next is not None:
-        print(curr.value, " -> ")
-        curr = curr.next
-      print("None")
+ll = LinkedList()
+ll.add_node('a')
+# ll.add_node('b')
+# ll.traverse()
 
