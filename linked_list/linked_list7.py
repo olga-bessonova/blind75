@@ -49,7 +49,24 @@ class LinkedList:
         curr = curr.next
     return print(remove_value, 'was not found')
     
+  
+  def insert(self, inserted_value, position):
+    # the head has a position 1. Insert at position 1 means to insert to the head
+    curr = self.head
+    prev = None
+    forw = None
+    counter = 0
+
+    if curr is None:
+      if position == 1:
+        self.append(inserted_value)
+      else:
+        print('not possible to insert at position', position)
+        return self.traverse()
     
+    # while counter != position:-, 
+
+
 l = LinkedList()
 l.append('a')
 l.append('b')
