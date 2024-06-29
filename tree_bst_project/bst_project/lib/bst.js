@@ -49,7 +49,33 @@ class BST {
             return this.searchRecur(val, node.right);
         }
     }
-    
+
+    searchRecur(val, node = this.root) {
+        // Base case: if node is null, value is not found
+        if (!node) return false;
+        // Base case: if node's value equals search value, return true
+        if (node.val === val) return true;
+        // Recursive case: search left or right subtree based on value comparison
+        if (val < node.val) {
+            return this.searchRecur(val, node.left);
+        } else {
+            return this.searchRecur(val, node.right);
+        }
+    }
+
+    searchIter(val) {
+        let current = this.root;
+        while (current) {
+            if (val === current.val) {
+                return true;
+            } else if (val < current.val) {
+                current = current.left;
+            } else {
+                current = current.right;
+            }
+        }
+        return false;
+    }   
 
 
 }
