@@ -60,3 +60,36 @@ print(batman("(abcd)"))
 print(batman("(n(a(mt)a)b)"))
 
 
+# use a stack for this
+# and create a string we'll call res
+
+# loop over our char
+#   we'll have three cases for any char in our str
+#   either: 1, its an opener, 2, its a closer, and 3, its just a letter
+
+#   1. append res to our stack
+#       res = ''
+
+#   2. reverse what we have in res, and append what is on the top of the stack to our res
+
+#   3. add char to res
+
+# loop is done, return our res
+
+def robin(s):
+    stack = list()
+    res = ''
+    
+    for char in s:
+        if char == '(':
+            stack.append(res)
+            res = ''
+            
+        elif char == ')':
+            res = res[::-1]
+            res = stack.pop() + res
+        
+        else:
+            res += char
+            
+    return res
